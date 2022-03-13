@@ -140,3 +140,88 @@ h1 {
 .icon-part button {
   padding: 9px 32px;
 }
+
+/*************** NEWS PART  *************/
+.news-part {
+  background: #F5F5F5;
+  padding: 80px 0 45px;
+}
+.header-news {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 0 auto;
+}
+.left-part {
+  line-height: 30px;
+}
+.left-part h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: left;
+}
+.left-part p {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.right-part button {
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+}
+.right-part button:hover {
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+.right-part i {
+  transform: translateX(5px);
+}
+/* .main-news {
+  padding: 65px 0;
+  margin: 0 auto;
+} */
+.main-news-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+.main-news-container > div {
+  position: relative;
+  max-width: 23%;
+}
+.mn-pic img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px #888;
+}
+.main-news-container h4 {
+  margin: 15px 0;
+  text-align: left;
+}
+.main-news-container p {
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+.link {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  transition: 0.4s ease;
+}
+.link i {
+  transform: translateX(5px);
+}
+.link:hover {
+  transform: scale(1.1);
+}
