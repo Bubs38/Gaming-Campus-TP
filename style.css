@@ -91,7 +91,7 @@ nav li:last-child::before {
 h1 {
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin: 30px 35px;
+  margin: 30px 0 35px;
   font-weight: 700;
 }
 .main-header button{
@@ -222,98 +222,164 @@ h1 {
   transform: scale(1.1);
 }
 /*************  CONTACT PART  *****************/
-.contact-container {
-  padding-top: 60px;
+.contact {
+  padding: 65px 0 20px;
   margin: 0 auto;
   max-width: 1100px; 
-} 
+}
 .contact-list {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  display: flex;
+  justify-content:space-around;
+  font-weight: 400;
   position: relative;
   padding-bottom: 30px;
 }
 .contact-list:after {
   content: "";
-  background-color: #D7D7D7;
-  width: 1000px;
+  background-color: #e0dfdf;
+  width: 80%;
   height: 1px;
   position: absolute;
-  bottom: 0;
-  left: 50px;
+  bottom: -28px;
 }
 .list {
   text-align: left;
-  padding: 0 20px;
+  width: 24%;
+}
+#contact-img img{
+  margin: 0 auto;
+  display: block;
+
 }
 .list h5 {
   text-transform: uppercase;
-  letter-spacing: 1px;
   margin-bottom: 15px;
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .infos-p li {
-  margin-bottom: 15px;
-}
-.list a {
-  font-weight: bold;
+  margin: 15px 0;
 }
 .list p {
-  line-height: 20px;
-  font-weight: bold;
-}
-.list:nth-child(3) p {
-  margin-bottom: 10px;
+  line-height: 22px;
+  margin-bottom: 15px;
 }
 .list h6 {
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
 }
-.list h6:nth-child(3) {
-  margin-bottom: 30px;
+.list .network {
+  margin: 20px 0 8px;
 }
-.footer-logos {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 100px;
-  margin-bottom: 30px;
+.footer-logos i{
+  font-style: 0.8rem;
+  margin: 0 12px 30px 0;
+}
+.copyright {
+  margin: 0;
 }
 .contact-medias {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  margin: 30px;
+  display: flex;
+  padding: 60px 0 15px;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+.medias-text {
+  text-align: left;
+  width: 30%;
 }
 .medias-text h3 {
   text-transform: uppercase;
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: 1rem;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
 }
 .medias-text p {
-  text-align: left;
-  line-height: 20px;
-  font-weight: bold;
+  font-size: 0.8rem;
 }
 .medias-logos {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 70%;
+}
+.medias-logos img {
+  width: 60px;
 }
 footer {
   background-color: #111111;
-  padding: 20px;
+  padding: 25px;
+  color: whitesmoke;
 }
 footer h3 {
-  color: whitesmoke;
   text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 32px;
 }
 footer ul {
   display: flex;
-  align-items: center;
   justify-content:space-around;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+/***********  MEDIAS QUERIES  **************/
+@media screen and (max-width:895px ) {
+  nav li{
+    font-size: 0.7rem;
+  }
+  .main-header img {
+    width: 60%;
+  }
+  .contact-list .list {
+    padding-left: 15px;
+  }
+  .medias-logos img {
+    width: 40px;
+  }
+  footer ul {
+    flex-wrap: wrap;
+  }
+  footer li {
+    margin: 5px;
+  }
+}
+@media screen and (max-width:710px ) {
+  nav li{
+    display: none;
+  }
+  .icon-part-container {
+    display: block;
+  }
+  .icon-part {
+    padding: 0 0 30px;
+  }
+  .list-icon-part {
+    margin-top: 50px;
+  }
+  .header-news {
+    display: block;
+  }
+  .left-part {
+    width: 100%;
+  }
+  .left-part h2 {
+    text-align: center;
+  }
+  .left-part p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .main-news-container {
+    display: block;
+  }
+  .main-news-container div {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    margin-top: 58px;
+  }
+  .main-news-container img {
+    width: 50%;
+  }
+  .contact {
+    display: none;
+  }
 }
